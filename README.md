@@ -50,44 +50,6 @@ The streaming part of the project was done from iot-traffic-project [InfoQ](http
 * Run the batch job `docker exec spark-master /spark/bin/spark-submit --class com.apssouza.iot.batch.BatchProcessor  --master spark://localhost:7077 /opt/spark-data/iot-spark-processor-1.0.0.jar`
 * Run the ML job `docker exec spark-master /spark/bin/spark-submit --class com.apssouza.iot.ml.SpeedPrediction  --master spark://localhost:7077 /opt/spark-data/iot-spark-processor-1.0.0.jar`
 
-### Miscellaneous
-
-#### Spark
-
-#### Submit a job to master
-- `mvn package`
-- `spark-submit --class com.apssouza.iot.streaming.StreamingProcessor --master spark://spark-master:7077 iot-spark-processor/target/iot-spark-processor-1.0.0.jar`
-Add `spark-master` to /etc/hosts pointing to localhost
-
-#### GUI
-http://localhost:8080 Master
-http://localhost:8081 Slave
-
-
-### HDFS
-
-Commands https://hortonworks.com/tutorial/manage-files-on-hdfs-via-cli-ambari-files-view/section/1/
-
-Open a file - http://localhost:50070/webhdfs/v1/path/to/file/file.csv?op=open
-
-Web file handle - https://hadoop.apache.org/docs/r1.0.4/webhdfs.html
-
-#### Commands :
-* `hdfs dfs -mkdir /user`
-* `hdfs dfs -mkdir /user/lambda`
-* `hdfs dfs -put localhost.csv /user/lambda/`
-* Access the file http://localhost:9870/webhdfs/v1/user/lambda/localhost.csv?op=OPEN&namenoderpcaddress=namenode:8020&offset=0
-
-#### Gui
-http://localhost:9870
-http://localhost:50075
-
-
-### Kafka
-* kafka-topics --create --topic iot-data-event --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:2181
-* kafka-console-producer --request-required-acks 1 --broker-list kafka:9092 --topic iot-data-event
-* kafka-console-consumer --bootstrap-server kafka:9092 --topic iot-data-event
-* kafka-topics --list --zookeeper zookeeper:2181
 
 
 ### Cassandra
