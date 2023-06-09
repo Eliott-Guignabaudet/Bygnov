@@ -2,7 +2,7 @@
 
 ![Alt text](diagram.png?raw=true "Lambda architecture")
 
-![Alt text](dashboard.png?raw=true "Dashboard")
+![Alt text](dashboardd.png?raw=true "Dashboard")
 
 Read about the project [here](https://dzone.com/articles/lambda-architecture-how-to-build-a-big-data-pipeli)
 
