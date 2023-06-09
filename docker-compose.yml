@@ -8,6 +8,7 @@ networks:
       config:
         - subnet: 172.22.0.0/24
 
+
 services:
 
   zookeeper:
