@@ -2,8 +2,8 @@
 
 ########################################################################
 # title:          Build Complete Project
-# author:         Alexsandro souza (https://dev.to/apssouza22)
-# url:            https://github.com/apssouza22
+# author:         Alexsandro souza (https://dev.to/ynov22)
+# url:            https://github.com/ynov22
 # description:    Build complete Big data pipeline
 # usage:          ./project-orchestrate.sh
 ########################################################################
