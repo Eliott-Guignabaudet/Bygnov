@@ -4,9 +4,7 @@
 
 ![Alt text](dashboardd.png?raw=true "Dashboard")
 
-Read about the project [here](https://dzone.com/articles/lambda-architecture-how-to-build-a-big-data-pipeli)
-
-Watch the videos demonstrating the project <a href="https://dzone.com/articles/lambda-architecturehow-to-build-a-big-data-pipelin" target="_blank">here</a>
+Project that we used [here](https://dzone.com/articles/lambda-architecture-how-to-build-a-big-data-pipeli)
 
 Our Lambda project receives real-time IoT Data Events coming from Connected Vehicles, 
 then ingested to Spark through Kafka. Using the Spark streaming API, we processed and analysed 
